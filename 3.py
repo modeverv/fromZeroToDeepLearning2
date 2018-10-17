@@ -55,6 +55,7 @@ class Embedding:
 
     def forward(self,idx):
         W, = self.params
+        print(W)
         self.idx = idx
         out = W[idx]
         return out
@@ -65,3 +66,6 @@ class Embedding:
         #dw[self.idx] = dout
         np.add.at(dW,self.idx,dout)
         return None
+
+e = Embedding([1,3,2])
+print(e.forward(0))
