@@ -103,3 +103,4 @@ class SimpleCBOW:
         self.in_layer1.backward(da)
         self.in_layer0.backward(da)
         return None
+
