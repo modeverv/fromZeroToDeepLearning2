@@ -155,7 +155,7 @@ corpus, word_to_id, id_to_word = preprocess(text)
 vocab_size = len(id_to_word)
 C = create_co_matrix(corpus, vocab_size, window_size=1)
 W = ppmi(C)
-
+'drive/deep-learning-from-scratch-2'
 # SVD
 U, S, V = np.linalg.svd(W)
 
